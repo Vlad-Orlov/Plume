@@ -10,7 +10,7 @@ $ mkdir build-Plume && cd build-Plume
 $ cmake ../Plume
 $ make -jN /// N is the number of threads available on the machine
 ```
-Then an executable file should appear. Run it with
+An executable file should appear. Run it with
 ```
 $ ./Plume
 ```
