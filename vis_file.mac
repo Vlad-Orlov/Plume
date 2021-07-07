@@ -1,0 +1,52 @@
+#/control/execute init_vis.mac
+# Macro file for the initialization of example B2
+# in interactive session
+#
+# Set some default verbose
+/control/verbose 2
+/control/saveHistory
+/run/verbose 2
+#
+# Change the default number of threads (in multi-threaded mode)
+#/run/numberOfThreads 4
+#
+# Initialize kernel
+/run/initialize
+#
+# Visualization setting
+
+/vis/open HepRepFile
+#/vis/open RayTracerX
+#/vis/open OGL
+/vis/scene/create
+/vis/scene/add/volume
+
+/vis/drawVolume
+/vis/heprep/useSolids true
+/vis/viewer/set/hiddenEdge 0
+/vis/sceneHandler/attach
+/vis/viewer/flush
+
+#/run/numberOfThreads 5
+
+
+#/vis/scene/add/axes
+
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+/vis/scene/add/trajectories smooth
+/vis/scene/add/hits
+
+
+/vis/viewer/set/viewpointThetaPhi 90 0 deg
+
+
+/run/initialize
+
+
+/tracking/verbose 0
+
+#/run/beamOn 10000
+/run/beamOn 1

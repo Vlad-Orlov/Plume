@@ -1,0 +1,29 @@
+#/vis/open HepRepFile
+#/vis/open RayTracerX
+/vis/open OGL
+/vis/scene/create
+/vis/scene/add/volume
+
+/vis/drawVolume
+/vis/heprep/useSolids true
+/vis/viewer/set/hiddenEdge 0
+/vis/sceneHandler/attach
+/vis/viewer/flush
+
+#/run/numberOfThreads 5
+
+
+/vis/scene/add/axes
+
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+/vis/scene/add/trajectories smooth
+/vis/scene/add/hits
+
+
+/vis/viewer/set/viewpointThetaPhi -90 0 deg
+
+
+

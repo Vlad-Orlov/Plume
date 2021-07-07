@@ -1,0 +1,9 @@
+Beams:idA = 2212
+Beams:idB = 2212
+Beams:eCM = 13000.
+
+SoftQCD::all = on
+HardQCD:all = on
+
+Random:setSeed = on
+!Random:seed = 125657
